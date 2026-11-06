@@ -142,3 +142,13 @@ describe(`${manifest.id} activate`, () => {
     expect(await screen.findByText(locales.tab.error)).toBeTruthy();
   });
 });
+
+describe("homepage widget", () => {
+  it("adds a homepage widget and declares the extension point", async () => {
+    rendered = await renderWithApp(plugin, { manifest, locales });
+    expect(rendered.registered.extensions("homepage.widgets")).toEqual([
+      "git_widget",
+    ]);
+    expect(manifest.contributes.uses).toContain("homepage.widgets");
+  });
+});

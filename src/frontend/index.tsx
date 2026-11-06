@@ -5,6 +5,7 @@ import { gitEnabled, panelEnabled } from "./enabled";
 import { GitCard } from "./GitCard";
 import { GitCompanion, useCompanionDefaults } from "./GitPanel";
 import { GitTab } from "./GitTab";
+import { gitWidget } from "./GitWidget";
 
 const TAB_ID = "git";
 
@@ -71,4 +72,5 @@ export function activate(app: TermixApp): void {
       );
     },
   });
+  app.registerExtension("homepage.widgets", gitWidget);
 }
