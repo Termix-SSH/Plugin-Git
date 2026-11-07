@@ -28,6 +28,7 @@ Read the [docs](https://docs.termix.site/plugins/git) to set it up and use it.
 - Auto pull on a schedule with an optional command after a pull and alerts when it fails
 - Uses the keys and git settings of the host's login user, no secrets stored in Termix
 - A Git panel beside terminals, a dashboard card and status tiles for Operations Center
+- Pull, push, fetch, switch, merge and reset through Termix actions
 
 <br />
 
