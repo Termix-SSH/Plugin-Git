@@ -258,10 +258,18 @@
     "all": "All repos"
   },
   "operations": {
-    "list-repos": { "title": "List git repos" },
-    "fetch": { "title": "Fetch a repo" },
-    "pull": { "title": "Pull a repo" },
-    "push": { "title": "Push a repo" },
+    "list-repos": {
+      "title": "List git repos"
+    },
+    "fetch": {
+      "title": "Fetch a repo"
+    },
+    "pull": {
+      "title": "Pull a repo"
+    },
+    "push": {
+      "title": "Push a repo"
+    },
     "checkout": {
       "title": "Switch branch",
       "branch": "Branch"
