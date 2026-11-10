@@ -6,6 +6,12 @@
 
 <p>See, pull, commit and push git repos on your hosts, and keep them up to date with auto pull</p>
 
+<!-- VIDEO:START -->
+
+<a href="https://www.youtube.com/watch?v=Qcq9u3bJtqA"><img src="https://img.shields.io/badge/Watch_the_demo-f59145?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the demo on YouTube" /></a>
+
+<!-- VIDEO:END -->
+
 </div>
 
 <br />
