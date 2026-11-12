@@ -91,6 +91,9 @@ function bash(script: string, env: Record<string, string> = {}) {
     encoding: "utf8",
     env: {
       ...process.env,
+      // Keep the developer's own git config (like commit signing) out.
+      GIT_CONFIG_GLOBAL: "/dev/null",
+      GIT_CONFIG_NOSYSTEM: "1",
       GIT_AUTHOR_NAME: "Tester",
       GIT_AUTHOR_EMAIL: "t@example.com",
       GIT_COMMITTER_NAME: "Tester",
