@@ -1,0 +1,245 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Termix-SSH/Termix/main/scripts/authz/authz.schema.json",
+  "seed": [],
+  "routes": {
+    "POST /plugin-api/git/:hostId/clone": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/discover": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "PUT /plugin-api/git/:hostId/repo/auto": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/auto/run": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      },
+      "destructive": true
+    },
+    "DELETE /plugin-api/git/:hostId/repo/branch": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      },
+      "destructive": true
+    },
+    "POST /plugin-api/git/:hostId/repo/branch": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/branches": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/checkout": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/commit": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/commit": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/diff": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/discard": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/fetch": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/log": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/merge": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/pull": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/push": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/remotes": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/reset": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      },
+      "destructive": true
+    },
+    "POST /plugin-api/git/:hostId/repo/stage": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/stash": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/stashes": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/repo/status": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repo/unstage": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "DELETE /plugin-api/git/:hostId/repos": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      },
+      "destructive": true
+    },
+    "GET /plugin-api/git/:hostId/repos": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "POST /plugin-api/git/:hostId/repos": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/:hostId/status": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect"
+      }
+    },
+    "GET /plugin-api/git/summary": {
+      "access": "user",
+      "permission": "git.use",
+      "resource": {
+        "kind": "host",
+        "min": "connect",
+        "key": "hostId"
+      },
+      "filtered": true,
+      "note": "Lists only what the caller may see"
+    }
+  }
+}
