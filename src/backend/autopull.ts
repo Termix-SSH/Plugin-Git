@@ -100,5 +100,8 @@ export function startAutoPull(
       running = false;
     }
   };
-  return ctx.schedule.every(TICK_MS, tick, { jitterMs: 5_000 });
+  return ctx.schedule.every(TICK_MS, tick, {
+    id: "auto-pull",
+    jitterMs: 5_000,
+  });
 }
